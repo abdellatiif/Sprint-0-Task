@@ -1,0 +1,43 @@
+a) Initialize a Git repository.
+
+b) Add the three ?les from step 2 to the staging area.
+git add .
+
+c) Deletethe?lethatcontainssection3.1GitBranching-BranchesinaNutshell. 
+rm File3.txt
+
+d) Roll back to restore the deleted ?le. 
+git checkout File3.txt
+
+e) Commit your changes from staging area to your repository must be descriptive. 
+git commit -m "Commit Message"
+
+f) Push your local repository to the GitHub server repository your created in step 1. 
+git push
+
+g) Create a README.md (has to be same exact name and format) ?le that contains: 
+
+i. Project Title (title of sprint). 
+
+ii. Getting Started (explanation of content in reop). 
+
+iii. Author (your ?rst name & last name & ID). 
+
+iv. Acknowledgments (book Chacon, Scott, and Ben Straub. Pro Git. Apress, 2014.). 
+
+h) Make a new branch called ReadMe. 
+git branch -b "ReadME"
+
+i) Add README.md to ReadMe branch. 
+git checkout ReadME
+
+j) Commit your changes from staging area to your repository (must be descriptive). 
+git commit -m "Commit to ReadMe"
+
+k) Merge the branch ReadMe into Master. 
+git checkout master
+git pull origin ReadMe
+
+l) Add & commit AllMyCommands.txt the ?le.
+git add .
+git commit -m "AllMyCommands"
